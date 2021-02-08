@@ -13,9 +13,11 @@
 		9297D9AC25D1382E00CADEAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9297D9AA25D1382E00CADEAB /* Main.storyboard */; };
 		9297D9AE25D1383000CADEAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9297D9AD25D1383000CADEAB /* Assets.xcassets */; };
 		9297D9B125D1383000CADEAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9297D9AF25D1383000CADEAB /* LaunchScreen.storyboard */; };
+		A5FBB71DC2145548CD093D5A /* Pods_VKNewsFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE68E44FBD40241C4666E3F /* Pods_VKNewsFeed.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6955183C93BEEC58B5D7FEDE /* Pods-VKNewsFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKNewsFeed.release.xcconfig"; path = "Target Support Files/Pods-VKNewsFeed/Pods-VKNewsFeed.release.xcconfig"; sourceTree = "<group>"; };
 		9297D9A125D1382E00CADEAB /* VKNewsFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKNewsFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9297D9A425D1382E00CADEAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9297D9A625D1382E00CADEAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		9297D9AD25D1383000CADEAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9297D9B025D1383000CADEAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9297D9B225D1383000CADEAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCE68E44FBD40241C4666E3F /* Pods_VKNewsFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKNewsFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9DE12054ECB606648411362 /* Pods-VKNewsFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKNewsFeed.debug.xcconfig"; path = "Target Support Files/Pods-VKNewsFeed/Pods-VKNewsFeed.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5FBB71DC2145548CD093D5A /* Pods_VKNewsFeed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78B22AF3391D0809EBCA79AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9DE12054ECB606648411362 /* Pods-VKNewsFeed.debug.xcconfig */,
+				6955183C93BEEC58B5D7FEDE /* Pods-VKNewsFeed.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9297D99825D1382E00CADEAB = {
 			isa = PBXGroup;
 			children = (
 				9297D9A325D1382E00CADEAB /* VKNewsFeed */,
 				9297D9A225D1382E00CADEAB /* Products */,
+				78B22AF3391D0809EBCA79AD /* Pods */,
+				E6A0DA4CCA1C0C8F000DC313 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = VKNewsFeed;
 			sourceTree = "<group>";
 		};
+		E6A0DA4CCA1C0C8F000DC313 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCE68E44FBD40241C4666E3F /* Pods_VKNewsFeed.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9297D9B525D1383000CADEAB /* Build configuration list for PBXNativeTarget "VKNewsFeed" */;
 			buildPhases = (
+				99283DE6F8C944DB50880FCF /* [CP] Check Pods Manifest.lock */,
 				9297D99D25D1382E00CADEAB /* Sources */,
 				9297D99E25D1382E00CADEAB /* Frameworks */,
 				9297D99F25D1382E00CADEAB /* Resources */,
+				132A7E8B13C2C51AE894A1B4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		132A7E8B13C2C51AE894A1B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VKNewsFeed/Pods-VKNewsFeed-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VKNewsFeed/Pods-VKNewsFeed-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VKNewsFeed/Pods-VKNewsFeed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99283DE6F8C944DB50880FCF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VKNewsFeed-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9297D99D25D1382E00CADEAB /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		9297D9B625D1383000CADEAB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9DE12054ECB606648411362 /* Pods-VKNewsFeed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		9297D9B725D1383000CADEAB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6955183C93BEEC58B5D7FEDE /* Pods-VKNewsFeed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
