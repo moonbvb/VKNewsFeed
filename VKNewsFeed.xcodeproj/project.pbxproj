@@ -3,14 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92733F9525D3EEE000FC6024 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92733F9425D3EEE000FC6024 /* AuthService.swift */; };
+		9288AC7825D3F3B200DAD9F3 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288AC7725D3F3B200DAD9F3 /* AuthViewController.swift */; };
+		9288AC7B25D3F43F00DAD9F3 /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9288AC7A25D3F43F00DAD9F3 /* AuthViewController.storyboard */; };
+		9288AC8025D4181D00DAD9F3 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288AC7F25D4181D00DAD9F3 /* FeedViewController.swift */; };
+		9288AC8325D4182B00DAD9F3 /* FeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9288AC8225D4182B00DAD9F3 /* FeedViewController.storyboard */; };
+		9288AC8825D420C100DAD9F3 /* UIViewController + Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288AC8725D420C100DAD9F3 /* UIViewController + Storyboard.swift */; };
 		9297D9A525D1382E00CADEAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9297D9A425D1382E00CADEAB /* AppDelegate.swift */; };
 		9297D9A725D1382E00CADEAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9297D9A625D1382E00CADEAB /* SceneDelegate.swift */; };
-		9297D9A925D1382E00CADEAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9297D9A825D1382E00CADEAB /* ViewController.swift */; };
-		9297D9AC25D1382E00CADEAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9297D9AA25D1382E00CADEAB /* Main.storyboard */; };
 		9297D9AE25D1383000CADEAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9297D9AD25D1383000CADEAB /* Assets.xcassets */; };
 		9297D9B125D1383000CADEAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9297D9AF25D1383000CADEAB /* LaunchScreen.storyboard */; };
 		A5FBB71DC2145548CD093D5A /* Pods_VKNewsFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE68E44FBD40241C4666E3F /* Pods_VKNewsFeed.framework */; };
@@ -18,11 +22,16 @@
 
 /* Begin PBXFileReference section */
 		6955183C93BEEC58B5D7FEDE /* Pods-VKNewsFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKNewsFeed.release.xcconfig"; path = "Target Support Files/Pods-VKNewsFeed/Pods-VKNewsFeed.release.xcconfig"; sourceTree = "<group>"; };
+		925A603625D3DFAD00B045EE /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		92733F9425D3EEE000FC6024 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		9288AC7725D3F3B200DAD9F3 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		9288AC7A25D3F43F00DAD9F3 /* AuthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
+		9288AC7F25D4181D00DAD9F3 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		9288AC8225D4182B00DAD9F3 /* FeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedViewController.storyboard; sourceTree = "<group>"; };
+		9288AC8725D420C100DAD9F3 /* UIViewController + Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Storyboard.swift"; sourceTree = "<group>"; };
 		9297D9A125D1382E00CADEAB /* VKNewsFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKNewsFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9297D9A425D1382E00CADEAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9297D9A625D1382E00CADEAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9297D9A825D1382E00CADEAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9297D9AB25D1382E00CADEAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9297D9AD25D1383000CADEAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9297D9B025D1383000CADEAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9297D9B225D1383000CADEAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,14 +57,52 @@
 				E9DE12054ECB606648411362 /* Pods-VKNewsFeed.debug.xcconfig */,
 				6955183C93BEEC58B5D7FEDE /* Pods-VKNewsFeed.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		92733F9725D3EEE800FC6024 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				92733F9425D3EEE000FC6024 /* AuthService.swift */,
+				9288AC7F25D4181D00DAD9F3 /* FeedViewController.swift */,
+				9288AC8225D4182B00DAD9F3 /* FeedViewController.storyboard */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		92733F9A25D3F15C00FC6024 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				9297D9A425D1382E00CADEAB /* AppDelegate.swift */,
+				9297D9A625D1382E00CADEAB /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		92733F9C25D3F16A00FC6024 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				9297D9AD25D1383000CADEAB /* Assets.xcassets */,
+				9297D9AF25D1383000CADEAB /* LaunchScreen.storyboard */,
+				9297D9B225D1383000CADEAB /* Info.plist */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		9288AC7D25D3F45400DAD9F3 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				9288AC7725D3F3B200DAD9F3 /* AuthViewController.swift */,
+				9288AC7A25D3F43F00DAD9F3 /* AuthViewController.storyboard */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		9297D99825D1382E00CADEAB = {
 			isa = PBXGroup;
 			children = (
 				9297D9A325D1382E00CADEAB /* VKNewsFeed */,
+				925A603625D3DFAD00B045EE /* Header.h */,
 				9297D9A225D1382E00CADEAB /* Products */,
 				78B22AF3391D0809EBCA79AD /* Pods */,
 				E6A0DA4CCA1C0C8F000DC313 /* Frameworks */,
@@ -73,13 +120,11 @@
 		9297D9A325D1382E00CADEAB /* VKNewsFeed */ = {
 			isa = PBXGroup;
 			children = (
-				9297D9A425D1382E00CADEAB /* AppDelegate.swift */,
-				9297D9A625D1382E00CADEAB /* SceneDelegate.swift */,
-				9297D9A825D1382E00CADEAB /* ViewController.swift */,
-				9297D9AA25D1382E00CADEAB /* Main.storyboard */,
-				9297D9AD25D1383000CADEAB /* Assets.xcassets */,
-				9297D9AF25D1383000CADEAB /* LaunchScreen.storyboard */,
-				9297D9B225D1383000CADEAB /* Info.plist */,
+				92733F9A25D3F15C00FC6024 /* Delegates */,
+				92733F9725D3EEE800FC6024 /* Services */,
+				9288AC7D25D3F45400DAD9F3 /* Auth */,
+				92733F9C25D3F16A00FC6024 /* Other */,
+				9288AC8725D420C100DAD9F3 /* UIViewController + Storyboard.swift */,
 			);
 			path = VKNewsFeed;
 			sourceTree = "<group>";
@@ -103,7 +148,7 @@
 				9297D99D25D1382E00CADEAB /* Sources */,
 				9297D99E25D1382E00CADEAB /* Frameworks */,
 				9297D99F25D1382E00CADEAB /* Resources */,
-				132A7E8B13C2C51AE894A1B4 /* [CP] Embed Pods Frameworks */,
+				6F7A29E25C8238DFC4F734F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,15 +197,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9297D9B125D1383000CADEAB /* LaunchScreen.storyboard in Resources */,
+				9288AC7B25D3F43F00DAD9F3 /* AuthViewController.storyboard in Resources */,
 				9297D9AE25D1383000CADEAB /* Assets.xcassets in Resources */,
-				9297D9AC25D1382E00CADEAB /* Main.storyboard in Resources */,
+				9288AC8325D4182B00DAD9F3 /* FeedViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		132A7E8B13C2C51AE894A1B4 /* [CP] Embed Pods Frameworks */ = {
+		6F7A29E25C8238DFC4F734F2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -206,23 +252,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9297D9A925D1382E00CADEAB /* ViewController.swift in Sources */,
+				9288AC7825D3F3B200DAD9F3 /* AuthViewController.swift in Sources */,
 				9297D9A525D1382E00CADEAB /* AppDelegate.swift in Sources */,
+				9288AC8025D4181D00DAD9F3 /* FeedViewController.swift in Sources */,
+				9288AC8825D420C100DAD9F3 /* UIViewController + Storyboard.swift in Sources */,
 				9297D9A725D1382E00CADEAB /* SceneDelegate.swift in Sources */,
+				92733F9525D3EEE000FC6024 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9297D9AA25D1382E00CADEAB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9297D9AB25D1382E00CADEAB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9297D9AF25D1383000CADEAB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -358,13 +399,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9P44DJCU6P;
-				INFOPLIST_FILE = VKNewsFeed/Info.plist;
+				INFOPLIST_FILE = VKNewsFeed/Other/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.denissuspicin.VKNewsFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Header.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -378,13 +420,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9P44DJCU6P;
-				INFOPLIST_FILE = VKNewsFeed/Info.plist;
+				INFOPLIST_FILE = VKNewsFeed/Other/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.denissuspicin.VKNewsFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Header.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
