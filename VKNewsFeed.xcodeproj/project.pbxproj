@@ -14,7 +14,6 @@
 		9288AC8325D4182B00DAD9F3 /* FeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9288AC8225D4182B00DAD9F3 /* FeedViewController.storyboard */; };
 		9288AC8825D420C100DAD9F3 /* UIViewController + Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288AC8725D420C100DAD9F3 /* UIViewController + Storyboard.swift */; };
 		9297D9A525D1382E00CADEAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9297D9A425D1382E00CADEAB /* AppDelegate.swift */; };
-		9297D9A725D1382E00CADEAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9297D9A625D1382E00CADEAB /* SceneDelegate.swift */; };
 		9297D9AE25D1383000CADEAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9297D9AD25D1383000CADEAB /* Assets.xcassets */; };
 		9297D9B125D1383000CADEAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9297D9AF25D1383000CADEAB /* LaunchScreen.storyboard */; };
 		A5FBB71DC2145548CD093D5A /* Pods_VKNewsFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE68E44FBD40241C4666E3F /* Pods_VKNewsFeed.framework */; };
@@ -31,7 +30,6 @@
 		9288AC8725D420C100DAD9F3 /* UIViewController + Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Storyboard.swift"; sourceTree = "<group>"; };
 		9297D9A125D1382E00CADEAB /* VKNewsFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKNewsFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9297D9A425D1382E00CADEAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9297D9A625D1382E00CADEAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9297D9AD25D1383000CADEAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9297D9B025D1383000CADEAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9297D9B225D1383000CADEAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,12 +58,19 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		926293FC25D517DF001559F2 /* FeedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9288AC7F25D4181D00DAD9F3 /* FeedViewController.swift */,
+				9288AC8225D4182B00DAD9F3 /* FeedViewController.storyboard */,
+			);
+			path = FeedViewController;
+			sourceTree = "<group>";
+		};
 		92733F9725D3EEE800FC6024 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				92733F9425D3EEE000FC6024 /* AuthService.swift */,
-				9288AC7F25D4181D00DAD9F3 /* FeedViewController.swift */,
-				9288AC8225D4182B00DAD9F3 /* FeedViewController.storyboard */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -74,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				9297D9A425D1382E00CADEAB /* AppDelegate.swift */,
-				9297D9A625D1382E00CADEAB /* SceneDelegate.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -123,6 +127,7 @@
 				92733F9A25D3F15C00FC6024 /* Delegates */,
 				92733F9725D3EEE800FC6024 /* Services */,
 				9288AC7D25D3F45400DAD9F3 /* Auth */,
+				926293FC25D517DF001559F2 /* FeedViewController */,
 				92733F9C25D3F16A00FC6024 /* Other */,
 				9288AC8725D420C100DAD9F3 /* UIViewController + Storyboard.swift */,
 			);
@@ -256,7 +261,6 @@
 				9297D9A525D1382E00CADEAB /* AppDelegate.swift in Sources */,
 				9288AC8025D4181D00DAD9F3 /* FeedViewController.swift in Sources */,
 				9288AC8825D420C100DAD9F3 /* UIViewController + Storyboard.swift in Sources */,
-				9297D9A725D1382E00CADEAB /* SceneDelegate.swift in Sources */,
 				92733F9525D3EEE000FC6024 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

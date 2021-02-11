@@ -14,7 +14,7 @@ class AuthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        authService = SceneDelegate.shared().authService
+        authService = AppDelegate.shared().authService
     }
     
     @IBAction func signInTouch(_ sender: UIButton) {
