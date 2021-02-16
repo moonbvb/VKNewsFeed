@@ -1,5 +1,6 @@
 # Uncomment the next line to define a global platform for your project
- platform :ios, '8.0'
+platform :ios, '8.0'
+inhibit_all_warnings!
 
 target 'VKNewsFeed' do
   # Comment the next line if you don't want to use dynamic frameworks
