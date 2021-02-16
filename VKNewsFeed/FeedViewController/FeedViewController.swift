@@ -17,13 +17,11 @@ class FeedViewController: UIViewController {
         view.backgroundColor = #colorLiteral(red: 0.3729973733, green: 0.6846226454, blue: 1, alpha: 1)
         
         fetcher.getFeed { (feedResponse) in
-//            guard let feedResponse = feedResponse else { return }
-//            feedResponse.items.map { (feedItem) in
-//                print(feedItem.comments)
-//            }
-            print("s")
+            guard let feedResponse = feedResponse else { return }
+            let _ = feedResponse.items.map { (feedItem) in
+                print(feedItem.comments ?? "")
+            }
         }
         
     }
 }
-

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G8O-Gh-lPs">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Newsfeed View Controller-->
+        <scene sceneID="azn-dO-mH1">
+            <objects>
+                <viewController id="G8O-Gh-lPs" customClass="NewsfeedViewController" customModule="VKNewsFeed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zdn-If-zlJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sot-Xf-6Pm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="G8O-Gh-lPs" id="FMO-JE-QY9"/>
+                                    <outlet property="delegate" destination="G8O-Gh-lPs" id="Mwy-bh-9RO"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TKJ-12-xxQ"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="sot-Xf-6Pm" firstAttribute="leading" secondItem="TKJ-12-xxQ" secondAttribute="leading" id="OtC-t4-JQm"/>
+                            <constraint firstAttribute="bottom" secondItem="sot-Xf-6Pm" secondAttribute="bottom" id="WcW-Ki-hnE"/>
+                            <constraint firstItem="sot-Xf-6Pm" firstAttribute="top" secondItem="zdn-If-zlJ" secondAttribute="top" id="bZw-2O-BRT"/>
+                            <constraint firstItem="sot-Xf-6Pm" firstAttribute="trailing" secondItem="TKJ-12-xxQ" secondAttribute="trailing" id="zz1-c3-JBu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="table" destination="sot-Xf-6Pm" id="0VP-pD-lxl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d0Z-Tk-abp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.507246376811594" y="8.7053571428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
