@@ -38,10 +38,10 @@ final class AuthService: NSObject, VKSdkDelegate, VKSdkUIDelegate {
         let scope = ["wall", "friends"]
         
         VKSdk.wakeUpSession(scope) { [delegate] (state, error) in
-            if state == VKAuthorizationState.authorized {
+            if state == .authorized {
                 print("VKAuthorizationState.authorized")
                 delegate?.authServiceSignIn()
-            } else if state == VKAuthorizationState.initialized {
+            } else if state == .initialized {
                 print("VKAuthorizationState.initialized")
                 VKSdk.authorize(scope)
             } else {

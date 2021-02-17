@@ -12,8 +12,6 @@
 		92733F9525D3EEE000FC6024 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92733F9425D3EEE000FC6024 /* AuthService.swift */; };
 		9288AC7825D3F3B200DAD9F3 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288AC7725D3F3B200DAD9F3 /* AuthViewController.swift */; };
 		9288AC7B25D3F43F00DAD9F3 /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9288AC7A25D3F43F00DAD9F3 /* AuthViewController.storyboard */; };
-		9288AC8025D4181D00DAD9F3 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288AC7F25D4181D00DAD9F3 /* FeedViewController.swift */; };
-		9288AC8325D4182B00DAD9F3 /* FeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9288AC8225D4182B00DAD9F3 /* FeedViewController.storyboard */; };
 		9288AC8825D420C100DAD9F3 /* UIViewController + Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288AC8725D420C100DAD9F3 /* UIViewController + Storyboard.swift */; };
 		9297D9A525D1382E00CADEAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9297D9A425D1382E00CADEAB /* AppDelegate.swift */; };
 		9297D9AE25D1383000CADEAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9297D9AD25D1383000CADEAB /* Assets.xcassets */; };
@@ -40,8 +38,6 @@
 		92733F9425D3EEE000FC6024 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		9288AC7725D3F3B200DAD9F3 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		9288AC7A25D3F43F00DAD9F3 /* AuthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
-		9288AC7F25D4181D00DAD9F3 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		9288AC8225D4182B00DAD9F3 /* FeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedViewController.storyboard; sourceTree = "<group>"; };
 		9288AC8725D420C100DAD9F3 /* UIViewController + Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Storyboard.swift"; sourceTree = "<group>"; };
 		9297D9A125D1382E00CADEAB /* VKNewsFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKNewsFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9297D9A425D1382E00CADEAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,15 +86,6 @@
 				9288AC8725D420C100DAD9F3 /* UIViewController + Storyboard.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		926293FC25D517DF001559F2 /* FeedViewController */ = {
-			isa = PBXGroup;
-			children = (
-				9288AC7F25D4181D00DAD9F3 /* FeedViewController.swift */,
-				9288AC8225D4182B00DAD9F3 /* FeedViewController.storyboard */,
-			);
-			path = FeedViewController;
 			sourceTree = "<group>";
 		};
 		92733F9725D3EEE800FC6024 /* Services */ = {
@@ -166,7 +153,6 @@
 				92733F9725D3EEE800FC6024 /* Services */,
 				9288AC7D25D3F45400DAD9F3 /* Auth */,
 				92982D2725DBDCDD00CFEDB5 /* Newsfeed */,
-				926293FC25D517DF001559F2 /* FeedViewController */,
 				923B248F25D55AB400059ECD /* Helpers */,
 				92733F9C25D3F16A00FC6024 /* Other */,
 			);
@@ -277,7 +263,6 @@
 				92982D3925DBF2C400CFEDB5 /* NewsfeedViewController.storyboard in Resources */,
 				9297D9AE25D1383000CADEAB /* Assets.xcassets in Resources */,
 				92982D4225DBFAF600CFEDB5 /* NewsfeedCell.xib in Resources */,
-				9288AC8325D4182B00DAD9F3 /* FeedViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,7 +320,6 @@
 				9288AC7825D3F3B200DAD9F3 /* AuthViewController.swift in Sources */,
 				9297D9A525D1382E00CADEAB /* AppDelegate.swift in Sources */,
 				92982D2F25DBDD3000CFEDB5 /* NewsfeedPresenter.swift in Sources */,
-				9288AC8025D4181D00DAD9F3 /* FeedViewController.swift in Sources */,
 				92982D3125DBDD3000CFEDB5 /* NewsfeedRouter.swift in Sources */,
 				9288AC8825D420C100DAD9F3 /* UIViewController + Storyboard.swift in Sources */,
 				9259270725D67E6A002848B9 /* NetworkService.swift in Sources */,
