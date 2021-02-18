@@ -32,5 +32,4 @@ class NewsfeedInteractor: NewsfeedBusinessLogic {
             }
         }
     }
-    
 }

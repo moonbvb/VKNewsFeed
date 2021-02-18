@@ -26,10 +26,10 @@ struct FeedItem: Decodable {
     let likes: CountableItem?
     let reposts: CountableItem?
     let views: CountableItem?
-    let attachment: [Attachment]?
+    let attachments: [Attechment]?
 }
 
-struct Attachment: Decodable {
+struct Attechment: Decodable {
     let photo: Photo?
 }
 
